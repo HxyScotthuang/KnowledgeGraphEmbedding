@@ -3,5 +3,5 @@ checkpoint
 *.log
 *.out
 upload.sh
-model/
+models/
 data/
