@@ -1,4 +1,6 @@
 checkpoint
 *.npy
 *.log
+*.out
+model/
 data/

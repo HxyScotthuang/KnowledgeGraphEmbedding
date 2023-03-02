@@ -14,9 +14,9 @@ source activate $DATA/myenv
 CUDA_VISIBLE_DEVICES=0 python3.9 -u codes/run.py --do_train \
  --cuda \
  --do_test \
- --data_path data/Hetionet_CtD_unbiased_inv \
- --model TransE \
+ --data_path data/Hetionet_CtD_biased_inv \
+ --model DistMult \
  -n 256 -b 256 -d 512 \
  -g 24.0 -a 1.0 -adv \
  -lr 0.0001 --max_steps 150000 \
- -save models/TransE_Het_Unbiased_0 --test_batch_size 16 
+ -save models/DistM_Het_Bias_0 --test_batch_size 16 
