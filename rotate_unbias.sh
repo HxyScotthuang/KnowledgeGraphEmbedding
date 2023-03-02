@@ -5,6 +5,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --partition=short
 #SBATCH --gres=gpu:v100:1 --constraint='gpu_mem:32GB'
+#SBATCH --mem-per-cpu=32G
 
 module purge
 module load Anaconda3
