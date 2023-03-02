@@ -4,7 +4,7 @@
 #SBATCH --job-name=kge
 #SBATCH --ntasks-per-node=1
 #SBATCH --partition=short
-#SBATCH --gres=gpu:v100:1
+#SBATCH --gres=gpu:v100:1 --constraint='gpu_mem:32GB'
 
 module purge
 module load Anaconda3
