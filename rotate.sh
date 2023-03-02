@@ -17,7 +17,7 @@ CUDA_VISIBLE_DEVICES=0 python3.9 -u codes/run.py --do_train \
  --do_test \
  --data_path data/Hetionet_inv \
  --model RotatE \
- -n 256 -b 256 -d 512 \
+ -n 1 -b 256 -d 512 \
  -g 24.0 -a 1.0 -adv \
  -lr 0.0001 --max_steps 150000 \
  -save models/RotatE_Het_0 --test_batch_size 16 -de
